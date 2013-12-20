@@ -1,0 +1,8 @@
+This combines any number of JSONs. Currently it only concatenates JSONs, but in the future there will be other wase to merge them.
+
+To Install:
+gem install jsoncombiner
+
+To Use:
+c = JSONCombiner.new(json1, json2)
+c.concatenate
