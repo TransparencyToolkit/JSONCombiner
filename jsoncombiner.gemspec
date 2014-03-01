@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'jsoncombiner'
-  s.version     = '0.0.1'
-  s.date        = '2013-12-19'
+  s.version     = '0.0.2'
+  s.date        = '2014-02-28'
   s.summary     = "Combines JSONs"
   s.description = "Input multiple JSONs, get back one with all the data"
   s.authors     = ["M. C. McGrath"]

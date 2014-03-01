@@ -9,10 +9,15 @@ class JSONCombiner
   def concatenate
     savearray = Array.new
     @inputjsons.each do |j|
-      savearray = savearray + JSON.parse(j)
+      nextfile = JSON.parse(j)
+      
+      nextfile.each do |h|
+         if !(savearray.include? h)
+           savearray.push(h)
+         end
+      end
     end
     
-    return savearray.to_json
+    return JSON.pretty_generate(savearray)
   end
 end
-
